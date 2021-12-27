@@ -1,0 +1,60 @@
+# model load, get, save options
+keypoint_save_epoch: 10
+# keypoint_save_iter: 50
+net_savedir: 'save'     # path to netG/D (to continue training)
+display_size: 1 
+print_freq: 10
+display_freq: 10 
+
+
+trainA_dir: 'datasets/leaves/trainA'
+testA_dir: 'datasets/leaves/testA'
+trainB_dir: 'datasets/leaves/trainB'
+testB_dir: 'datasets/leaves/testB'
+
+
+# optimization hyper-parameters
+max_epochs: 300                          # maximum number of training epochs
+batch_size: 1                        # batch size
+num_workers: 4
+lr_g: 0.0005                           # learning rate, default=0.0005 #0.0001
+lr_d: 0.0005                           # learning rate, default=0.0005 
+beta1: 0.5                             # beta1 for adam. default=0.5
+beta2: 0.999                  # Adam parameter
+gamma: 0.1                    # how much to decay learning rate
+step_size: 1000             # how often to decay learning rate
+gan_w: 1                     # weight of adversarial loss
+cls_w: 0                      # weight of classification loss
+vgg_w: 1                              # structural comparison
+idt_w: 5                               # identity loss
+cycle_w: 10                            # cycle loss
+pono_w: 0
+texture_w: 1
+single_w: 0
+lambda_grad: 0                         # weight of gradient penalty
+init_method: orthogonal                # gaussian
+
+# Generator hyper-parameters
+netG:
+  n_downsampling: 2
+  input_dim: 3                          # input dimension
+  output_dim: 3                            # output dimension
+  ngf: 32
+  kernel_size: 4                        # kernel size
+  stride: 2                             # stride
+  padding: 1                           # net pad size
+  norm: in                              # normalization layer [none/bn/in/ln]
+  activ: tanh                 # activation function [ReLU/relu/lrelu/prelu/selu/tanh]
+  pad_type: zero              # padding type [zero/reflect/replicate]
+  n_res: 1                    # number of residual blocks in content encoder/decoder
+# Discriminator hyper-parameters
+netD:
+  num_layer: 3
+  input_dim: 3                          # input dimension
+  ndf: 32
+  kernel_size: 3                        # kernel size
+  stride: 1                             # stride
+  padding: 1                            # net pad size
+  gan_type: lsgan                        # type of GAN loss: lsgan/nsgan
+  activ: lrelu                 # activation function [ReLU/relu/lrelu/prelu/selu/tanh]
+  pad_type: zero              # padding type [zero/reflect/replicate]
