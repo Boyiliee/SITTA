@@ -17,10 +17,31 @@ Recent advances in image synthesis enables one to translate images by learning t
 ### Environment
 CUDA 10.1, pytorch 1.3.1
 
+### Dataset Preparation
+
+<table>
+  <thead>
+    <tr style="text-align: right;">
+       <th></th>
+      <th>dataset</th>
+      <th>url</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+       <th>0</th>
+       <td>SITT leaves images from <a href="https://arxiv.org/abs/2004.11958">Plant Pathology 2020</a> </td>
+      <td><a href="https://drive.google.com/drive/folders/1GOmB86w-uVaKo5EydA0YgspPxkE0grbt?usp=sharing">download</a></td>
+    </tr>
+  </tbody>
+</table>
+
 ### Running 
 `bash run.sh`
 
-More will be updated.
+
+
+#### More will be updated
 
 If you find this repo useful, please cite:
 ```
