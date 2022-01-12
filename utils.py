@@ -10,7 +10,10 @@ from PIL import Image
 import numpy as np
 from torchvision.utils import save_image
 
-
+def get_config(config):
+    with open(config, 'r') as content:
+        return yaml.load(content)
+    
 def get_arguments():
     parser = argparse.ArgumentParser()
     # basic setting:
