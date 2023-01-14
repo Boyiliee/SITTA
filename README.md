@@ -1,5 +1,5 @@
-# SITT
-The repo contains official PyTorch Implementation of the paper [Single Image Texture Translation for Data Augmentation](https://arxiv.org/abs/2106.13804).
+# SITTA
+The repo contains official PyTorch Implementation of the paper [SITTA: Single Image Texture Translation for Data Augmentation](https://arxiv.org/abs/2106.13804).
 
 #### Authors: 
 * [Boyi Li](https://sites.google.com/site/boyilics/home)
