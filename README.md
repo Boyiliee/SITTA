@@ -1,5 +1,5 @@
 # SITTA
-The repo contains official PyTorch Implementation of the paper [SITTA: Single Image Texture Translation for Data Augmentation](https://arxiv.org/abs/2106.13804).
+The repo contains official PyTorch Implementation of the paper [SITTA: Single Image Texture Translation for Data Augmentation](https://link.springer.com/chapter/10.1007/978-3-031-25063-7_1).
 
 #### Authors: 
 * [Boyi Li](https://sites.google.com/site/boyilics/home)
@@ -45,11 +45,22 @@ CUDA 10.1, pytorch 1.3.1
 
 If you find this repo useful, please cite:
 ```
-@article{li2021single,
-  title={Single Image Texture Translation for Data Augmentation},
-  author={Li, Boyi and Cui, Yin and Lin, Tsung-Yi and Belongie, Serge},
-  journal={arXiv preprint arXiv:2106.13804},
-  year={2021}
+@InProceedings{10.1007/978-3-031-25063-7_1,
+author="Li, Boyi
+and Cui, Yin
+and Lin, Tsung-Yi
+and Belongie, Serge",
+editor="Karlinsky, Leonid
+and Michaeli, Tomer
+and Nishino, Ko",
+title="SITTA: Single Image Texture Translation for Data Augmentation",
+booktitle="Computer Vision -- ECCV 2022 Workshops",
+year="2023",
+publisher="Springer Nature Switzerland",
+address="Cham",
+pages="3--20",
+abstract="Recent advances in data augmentation enable one to translate images by learning the mapping between a source domain and a target domain. Existing methods tend to learn the distributions by training a model on a variety of datasets, with results evaluated largely in a subjective manner. Relatively few works in this area, however, study the potential use of image synthesis methods for recognition tasks. In this paper, we propose and explore the problem of image translation for data augmentation. We first propose a lightweight yet efficient model for translating texture to augment images based on a single input of source texture, allowing for fast training and testing, referred to as Single Image Texture Translation for data Augmentation (SITTA). Then we explore the use of augmented data in long-tailed and few-shot image classification tasks. We find the proposed augmentation method and workflow is capable of translating the texture of input data into a target domain, leading to consistently improved image recognition performance. Finally, we examine how SITTA and related image translation methods can provide a basis for a data-efficient, ``augmentation engineering'' approach to model training.",
+isbn="978-3-031-25063-7"
 }
 ```
 
