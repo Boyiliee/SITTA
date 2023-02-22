@@ -1,6 +1,8 @@
 # SITTA
 The repo contains official PyTorch Implementation of the paper [SITTA: Single Image Texture Translation for Data Augmentation](https://link.springer.com/chapter/10.1007/978-3-031-25063-7_1).
 
+European Conference on Computer Vision (ECCV) Workshops, 2022
+
 #### Authors: 
 * [Boyi Li](https://sites.google.com/site/boyilics/home)
 * [Yin Cui](https://scholar.google.com/citations?hl=zh-CN&user=iP5m52IAAAAJ)
