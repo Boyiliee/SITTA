@@ -41,10 +41,6 @@ CUDA 10.1, pytorch 1.3.1
 ### Running 
 `bash run.sh`
 
-
-
-#### More will be updated
-
 If you find this repo useful, please cite:
 ```
 @InProceedings{10.1007/978-3-031-25063-7_1,
